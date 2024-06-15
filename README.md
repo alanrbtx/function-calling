@@ -16,7 +16,7 @@ LLMs like GPT-4 and GPT-3.5 can detect when a function needs to be called and ge
 
 ## Example: Sending Email with Gemini and Open Source Models
 
-'''python
+```python
 def multiply(a:float, b:float):
     """returns a * b."""
     return a*b
@@ -52,4 +52,4 @@ chat = model.start_chat(enable_automatic_function_calling=True)
 
 response = chat.send_message('Send a message to email about meeting on June 13. And tell him to call my number back. Be kind')
 response.text
-'''
+```
